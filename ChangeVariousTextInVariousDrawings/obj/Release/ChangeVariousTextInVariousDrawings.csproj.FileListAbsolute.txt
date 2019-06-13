@@ -1,0 +1,16 @@
+D:\OneDrive\Programacao\02 C#\ChangeVariousTextInVariousDrawings\ChangeVariousTextInVariousDrawings\bin\Release\ChangeVariousTextInVariousDrawings.exe.config
+D:\OneDrive\Programacao\02 C#\ChangeVariousTextInVariousDrawings\ChangeVariousTextInVariousDrawings\bin\Release\ChangeVariousTextInVariousDrawings.exe
+D:\OneDrive\Programacao\02 C#\ChangeVariousTextInVariousDrawings\ChangeVariousTextInVariousDrawings\bin\Release\Autodesk.AutoCAD.Interop.Common.dll
+D:\OneDrive\Programacao\02 C#\ChangeVariousTextInVariousDrawings\ChangeVariousTextInVariousDrawings\bin\Release\Autodesk.AutoCAD.Interop.dll
+D:\OneDrive\Programacao\02 C#\ChangeVariousTextInVariousDrawings\ChangeVariousTextInVariousDrawings\obj\Release\ChangeVariousTextInVariousDrawings.csprojAssemblyReference.cache
+D:\OneDrive\Programacao\02 C#\ChangeVariousTextInVariousDrawings\ChangeVariousTextInVariousDrawings\obj\Release\ChangeVariousTextInVariousDrawings.csproj.CoreCompileInputs.cache
+D:\OneDrive\Programacao\02 C#\ChangeVariousTextInVariousDrawings\ChangeVariousTextInVariousDrawings\obj\Release\ChangeVariousTextInVariousDrawings.csproj.CopyComplete
+D:\OneDrive\Programacao\02 C#\ChangeVariousTextInVariousDrawings\ChangeVariousTextInVariousDrawings\obj\Release\ChangeVariousTextInVariousDrawings.exe
+C:\Users\User\Desktop\Nova pasta\ChangeVariousTextInVariousDrawings\bin\Release\TrocarTextosTodosDesenhos.exe.config
+C:\Users\User\Desktop\Nova pasta\ChangeVariousTextInVariousDrawings\bin\Release\TrocarTextosTodosDesenhos.exe
+C:\Users\User\Desktop\Nova pasta\ChangeVariousTextInVariousDrawings\bin\Release\Autodesk.AutoCAD.Interop.Common.dll
+C:\Users\User\Desktop\Nova pasta\ChangeVariousTextInVariousDrawings\bin\Release\Autodesk.AutoCAD.Interop.dll
+C:\Users\User\Desktop\Nova pasta\ChangeVariousTextInVariousDrawings\obj\Release\ChangeVariousTextInVariousDrawings.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Nova pasta\ChangeVariousTextInVariousDrawings\obj\Release\ChangeVariousTextInVariousDrawings.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Nova pasta\ChangeVariousTextInVariousDrawings\obj\Release\ChangeVariousTextInVariousDrawings.csproj.CopyComplete
+C:\Users\User\Desktop\Nova pasta\ChangeVariousTextInVariousDrawings\obj\Release\TrocarTextosTodosDesenhos.exe
