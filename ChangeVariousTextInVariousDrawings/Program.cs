@@ -22,30 +22,49 @@ namespace ChangeVariousTextInVariousDrawings
 				Environment.Exit(0);
 			}
 
+            const string progId = "AutoCAD.Application";
             AcadApplication acApp = null;
 
             try
             {
-                acApp = Marshal.GetActiveObject("AutoCAD.Application") as AcadApplication;
-                acApp.Visible = true;
+                acApp = (AcadApplication)Marshal.GetActiveObject(progId);
             }
             catch
             {
-                MessageBox.Show("Não foi possível abrir o AutoCAD");
+                try
+                {
+                    Type t = Type.GetTypeFromProgID(progId);
+                    acApp = (AcadApplication)Activator.CreateInstance(t, true);
+                }
+                catch
+                {
+                    MessageBox.Show("Não possível abrir o AutoCAD!");
+                }
             }
-			
-        	foreach (var desenho in arquivos)
+
+            if (acApp != null)
+            {
+                System.Threading.Thread.Sleep(500);
+                acApp.Visible = true;
+            }
+
+            foreach (var desenho in arquivos)
         	{
                 AcadDocument doc;
+
+                System.Threading.Thread.Sleep(1000);
 
                 try
                 {
                     doc = acApp.Documents.Open(desenho, false, string.Empty);
+
+                    System.Threading.Thread.Sleep(2000);
+
                     AcadModelSpace modelSpace = doc.ModelSpace;
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Não foi possível abrir o desenho: ", desenho);
+                    MessageBox.Show("Não foi possível abrir o desenho: " + desenho);
                     break;
                 }
 
@@ -61,9 +80,9 @@ namespace ChangeVariousTextInVariousDrawings
                 {
                     foreach (var item in numeros)
                     {
-                        if (txt.TextString == item.Split(';')[0])
+                        if (txt.TextString.Contains(item.Split(';')[0]))
                         {
-                            txt.TextString = item.Split(';')[1];
+                            txt.TextString = txt.TextString.Replace(item.Split(';')[0], item.Split(';')[1]);
                         }
                     }
                 }
@@ -77,9 +96,9 @@ namespace ChangeVariousTextInVariousDrawings
                 {
                     foreach (var item in numeros)
                     {
-                        if (mtxt.TextString == item.Split(';')[0])
+                        if (mtxt.TextString.Contains(item.Split(';')[0]))
                         {
-                            mtxt.TextString = item.Split(';')[1];
+                            mtxt.TextString = mtxt.TextString.Replace(item.Split(';')[0], item.Split(';')[1]);
                         }
                     }
                 }
